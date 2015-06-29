@@ -5,11 +5,8 @@
     <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="description" content="Verso Digital provides innovative thinking, tech leadership and digital design, we aligning users, technology and business to create your digital product">
-
     <meta name="keywords" content="software solutions provider, software application development, epam, software services provider, software product development services">
-
     <title>Verso Digital | Leadership in Technology</title>
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -56,9 +53,9 @@
                     <div class="col-md-3">
                         <div class="logo">
                             <a href="" title="">
-                                <img src="img/logo-black.png" class="black-logo standard-logo middle-content" alt="" />
+                                <img src="img/logo-black.png" class="black-logo standard-logo middle-content" alt="" height="50px"/>
                                 <img src="img/logo-white.png" class="white-logo standard-logo middle-content" alt="" />
-                                <img src="img/logo-black.png" class="black-logo retina-logo middle-content" alt="" />
+                                <img src="img/logo-black.png" class="black-logo retina-logo middle-content" alt="" height="50px"/>
                                 <img src="img/logo-white.png" class="white-logo retina-logo middle-content" alt="" />
                             </a>
                         </div>
@@ -67,11 +64,13 @@
                     <div class="col-md-9 menu-col text-right">
                         <div class="menu">
                             <ul class="list-inline">
-                                <li><a href="#">Home</a>
+                                <li><a href="#home">Home</a>
                                 </li>
-                                <li class="dropdown"><a href="#">About Us</a>
+                                <li class="dropdown"><a href="#about">About Us</a>
                                 </li>
-                                <li class="dropdown"><a href="#">Our Services</a>
+                                <li class="dropdown"><a href="#ourservices">Our Services</a>
+                                </li>
+                                <li class="dropdown"><a href="#contactus">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
@@ -87,7 +86,7 @@
         <!-- /header -->
         <!-- PARALLAX SECTION -->
         <section class="big-padding section background-wrapper">
-            <div class="background-image parallax-background" data-stellar-background-ratio="1" style="background: url(img/banner-large.jpg);"></div>
+            <div id="home" class="background-image parallax-background" data-stellar-background-ratio="1" style="background: url(img/banner-large.jpg);"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -121,7 +120,7 @@
             <!-- /.container -->
         </section>
         <!-- /.section -->
-        <section class="section grey-background">
+        <section id="ourservices" class="section grey-background">
             <div class="container">
                 <div class="row text-center">
                     <div class="col-lg-8 col-lg-offset-2 animate" data-animate="fadeIn">
@@ -191,7 +190,7 @@
             <!-- /.container -->
         </section>
         <!-- /.section -->
-        <section class="section">
+        <section id="contactus" class="section">
             <div class="container">
                 <hr>
                 <div class="space"></div>
@@ -234,7 +233,7 @@
                     <!--/.col-->
                     <div class="col-md-3">
                         <div class="widget">
-                            <address>
+                            <address id="contactus">
                                 <strong>Verso Digital Limited</strong>
                                 <br> 6th floor, Cheung Hing Industrial Building, 12P Smithfield Road,
                                 <br> Kennedy Town Hong Kong
