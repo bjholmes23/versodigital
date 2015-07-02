@@ -54,5 +54,5 @@ gulp.task('watch', function () {
   gulp.watch(['./src/**/*'], ['inject']);
 });
 
-gulp.task('default', ['connect', 'watch']);
+gulp.task('default', ['inject', 'connect', 'watch']);
 gulp.task('build', ['inject']);
