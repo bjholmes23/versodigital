@@ -1,7 +1,7 @@
 var path = require('path');
 var gulp = require('gulp');
 var less = require('gulp-less');
-var serve = require('gulp-serve');
+var connect = require('gulp-connect');
 var inject = require('gulp-inject');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
@@ -40,10 +40,19 @@ gulp.task('inject', ['less', 'uglify'], function () {
     }))
     .pipe(inject(
       gulp.src(['./css/**/*.css', './js/*.js'], { read: false }), { addRootSlash: false }
-    )).pipe(gulp.dest('./'));
+    )).pipe(gulp.dest('./')).pipe(connect.reload());
 });
 
-gulp.task('serve', ['inject'], serve('./'));
+gulp.task('connect', function () {
+  connect.server({
+    livereload: true,
+    port: 3000
+  });
+});
 
-gulp.task('default', ['serve']);
+gulp.task('watch', function () {
+  gulp.watch(['./src/**/*'], ['inject']);
+});
+
+gulp.task('default', ['connect', 'watch']);
 gulp.task('build', ['inject']);
