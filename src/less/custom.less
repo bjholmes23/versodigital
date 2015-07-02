@@ -1,5 +1,5 @@
 p {
-    font-size:18px;
+    font-size: 18px;
 }
 
 // Verso Colors
@@ -14,7 +14,7 @@ p {
 
 // Red circle image around text
 .encircle {
-    background: url(/img/circle-highlight.png);
+    background: url(~"../img/circle-highlight.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -44,6 +44,7 @@ p {
     border-radius: 10px !important;
     -moz-border-radius: 10px !important;
     -webkit-border-radius: 10px !important;
+    transition: background-color 2.5s ease;
 }
 
 #footer {
@@ -52,11 +53,17 @@ p {
 }
 
 .dropdown-menu {
-background-color:@color-secondary !important;
+    background-color: @color-secondary !important;
 }
 
 @media (max-width: 767px) {
+    font-color:green !important;
+}
 
-font-color:green !important;
+.standard-logo {
+    height: 50px;
+}
 
+.retina-logo {
+    height: 50px;
 }
