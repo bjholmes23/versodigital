@@ -7,7 +7,13 @@ if git diff-index --quiet HEAD --; then
     git pull
     git merge master
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    npm install
+    bower install
+>>>>>>> master
     gulp build
+    npm prune --production
     git add -f .
 =======
     git add -f .
