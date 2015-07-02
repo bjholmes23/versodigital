@@ -5433,6 +5433,10 @@ p {
   text-transform: uppercase;
   letter-spacing: 4px;
 }
+.footer-logo {
+  float: right;
+  margin: 10px;
+}
 .encircle {
   background: url(../img/circle-highlight.gif);
   background-size: 100% auto;
@@ -5452,6 +5456,9 @@ p {
 }
 .services-icon {
   height: 130px;
+}
+.btn-contactus {
+  margin: 0 !important;
 }
 .square-button {
   font-size: 30px !important;
