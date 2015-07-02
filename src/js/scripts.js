@@ -1,7 +1,7 @@
 (function($) {
     "use strict";
 
-    $(document).ready(function() {    
+    $(document).ready(function() {
 
         fullscreen_section($(this));
         parallax_image();
@@ -15,13 +15,12 @@
         bs_tooltip($(this));
         youtube_bg($(this));
         scroll_down($(this));
-        nivo_lightbox($(this));
         mobile_touch($(this));
     });
 
     /* Window Load/All Media Loaded */
     jQuery(window).load(function() {
-        
+
         site_loader($(this));
         fullscreen_section($(this));
         parallax_image();
@@ -54,7 +53,7 @@
             directionNav: false,
             controlsContainer: ".hero-controls",
             controlNav: true,
-            slideshow: true,               
+            slideshow: true,
             useCSS: true,
 
             // for Transparent Header
@@ -62,13 +61,13 @@
                 if($('li.flex-active-slide').hasClass("dark-slider")){
                     $('.header').addClass('white-header');
                 }
-                else {       
+                else {
                     $('.header').removeClass('white-header');
                 }
                 if($('li.flex-active-slide').hasClass("white-slider")){
                     $('.header').addClass('black-header');
                 }
-                else {       
+                else {
                     $('.header').removeClass('black-header');
                 }
             },
@@ -76,24 +75,24 @@
                 if($('li.flex-active-slide').hasClass("dark-slider")){
                     $('.header').addClass('inverse-header');
                 }
-                else {       
+                else {
                     $('.header').removeClass('inverse-header');
                 }
                 if($('li.flex-active-slide').hasClass("white-slider")){
                     $('.header').addClass('black-header');
                 }
-                else {       
+                else {
                     $('.header').removeClass('black-header');
                 }
             }
         });
-        
+
         $('.flex-prev, .flex-next').on('click', function(){
             var href = $(this).attr('href');
             $('.hero-slider').flexslider(href)
             return false;
         })
-        
+
         $('.flexslider').flexslider({
             animation: "fade",
             controlNav: true,
@@ -138,14 +137,14 @@
         $('.video-background').each(function(){
             $(this).YTPlayer({
                 videoURL: $(this).data('video-id'),
-                containment:'self', 
-                showControls:false, 
-                autoPlay:true, 
-                loop:true, 
-                mute:true, 
-                startAt:0, 
-                opacity:1, 
-                addRaster:true, 
+                containment:'self',
+                showControls:false,
+                autoPlay:true,
+                loop:true,
+                mute:true,
+                startAt:0,
+                opacity:1,
+                addRaster:true,
                 quality:'default'
             });
         });
@@ -178,7 +177,7 @@
         });
     }
 
-    // Fix Height 
+    // Fix Height
     var fix_height = function($this) {
         var auto_height = function() {
             if ($(window).width() > 991) {
@@ -205,9 +204,9 @@
     var progress_bar = function($this) {
         $this.find('.progress-bar').each(function() {
             var $this = $(this);
-            
+
             $this.waypoint(function(direction) {
-                $this.css('width', $this.attr('aria-valuenow') + '%');    
+                $this.css('width', $this.attr('aria-valuenow') + '%');
             }, {
                 offset: '80%',
                 triggerOnce: true
@@ -248,7 +247,7 @@
                 $(this).find('>.dropdown-menu').slideUp();
             }
         );
-        
+
     }
 
     // OWL Carousel
@@ -336,10 +335,10 @@
     // Bootstrap Tooltip
     var bs_tooltip = function($this) {
         $('[data-toggle="tooltip"]').tooltip()
-    
+
         var tab_height;
         $(".nav-tabs > li > a").on('click', function(){
-        
+
             if (!($(this).parent("li").hasClass("active"))) {
                 tab_height = $(".tab-content > .tab-pane").filter($(this).attr("href")).height();
                 $(".tab-content").animate({
@@ -347,57 +346,49 @@
                 }, function(){
                     $(".tab-content").css("height", "auto");
                 });
-                
+
             }
-            
+
         });
-        
+
         // Accordion
         var allPanels = $(".accordion > dd").hide();
         allPanels.first().slideDown("easeOutExpo");
         $(".accordion > dt > a").first().addClass("active");
-        
+
         $(".accordion > dt > a").on('click', function(){
-        
+
             var current = $(this).parent().next("dd");
             $(".accordion > dt > a").removeClass("active");
             $(this).addClass("active");
             allPanels.not(current).slideUp("easeInExpo");
             $(this).parent().next().slideDown("easeOutExpo");
-            
+
             return false;
-            
+
         });
-        
+
         // Toggle
         var allToggles = $(".toggle > dd").hide();
-        
+
         $(".toggle > dt > a").on('click', function(){
-        
+
             if ($(this).hasClass("active")) {
-            
+
                 $(this).parent().next().slideUp("easeOutExpo");
                 $(this).removeClass("active");
-                
+
             }
             else {
                 var current = $(this).parent().next("dd");
                 $(this).addClass("active");
                 $(this).parent().next().slideDown("easeOutExpo");
             }
-            
+
             return false;
         });
     }
-    
-    // Nivo Lightbox
-    var nivo_lightbox = function($this) {
-        $('a.light-box').nivoLightbox({
-            effect: 'fade',                             // The effect to use when showing the lightbox
-            theme: 'default',                             // The lightbox theme to use
-            keyboardNav: true
-        });
-    }
+
     // Sticky Header
     var sticky_header = function ($this) {
         $("<div class='blank-space'></div>").insertAfter("#header");
@@ -407,7 +398,7 @@
             } else {
                 $('#header').removeClass('sticky');
             }
-        });   
+        });
     }
 
     // ISOTOPE Go
@@ -437,7 +428,7 @@
         });
         var $optionSets = $('ul.portfolio-filter'),
            $optionLinks = $optionSets.find('a');
-      
+
            $optionLinks.on('click', function(){
               var $this = $(this);
           // don't proceed if already selected
@@ -446,7 +437,7 @@
           }
         var $optionSet = $this.parents('ul.portfolio-filter');
            $optionSet.find('.selected').removeClass('selected');
-           $this.addClass('selected'); 
+           $this.addClass('selected');
         });
     }
     var isotope_fit_rows = function($this) {

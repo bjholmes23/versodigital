@@ -1,0 +1,35 @@
+{
+  "name": "versodigital",
+  "version": "1.0.0",
+  "homepage": "https://github.com/bjholmes23/versodigital",
+  "authors": [
+    "Verso Digital"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "isotope": "~2.2.0",
+    "jquery.scrollTo": "~2.1.1",
+    "jquery.stellar": "~0.6.2",
+    "flexslider": "~2.5.0",
+    "jquery.localScroll": "~1.4.0",
+    "waypoints": "~2.0.3"
+  },
+  "overrides": {
+    "isotope": {
+      "main": "dist/isotope.pkgd.min.js"
+    },
+    "masonry": {
+      "main": "dist/masonry.pkd.min.js"
+    },
+    "waypoints": {
+      "main": "waypoints.min.js",
+      "dependencies": {
+        "jquery": "~1.11.3"
+      }
+    }
+  }
+}
