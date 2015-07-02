@@ -5,7 +5,7 @@ if git diff-index --quiet HEAD --; then
     git pull
     git checkout gh-pages
     git pull
-    git merge master
+    git merge master --no-edit
     [ $? -gt 0 ] && { echo "Merge failed"; exit 1; }
     npm install
     bower install
