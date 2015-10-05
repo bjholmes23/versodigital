@@ -5,7 +5,7 @@ body {
   line-height: 25.2px;
   color: #676767;
   font-weight: 400;
-  background-color: #ffffff;
+  background-color: #FFF;
 }
 .small-text {
   font-size: 12px;
@@ -297,7 +297,7 @@ blockquote footer {
   color: #ffae00 !important;
 }
 .text-secondary {
-  color: #001f58 !important;
+  color: #001F58 !important;
 }
 .text-secondary h1,
 .text-secondary h2,
@@ -305,7 +305,7 @@ blockquote footer {
 .text-secondary h4,
 .text-secondary h5,
 .text-secondary h6 {
-  color: #001f58 !important;
+  color: #001F58 !important;
 }
 .text-info {
   color: #2196f3 !important;
@@ -424,7 +424,7 @@ blockquote footer {
 }
 .btn-punch.btn-white.hover-colors.hover-secondary:hover,
 .btn-punch.btn-white.hover-colors.hover-secondary:focus {
-  color: #001f58;
+  color: #001F58;
 }
 .btn-punch.btn-white.hover-colors.hover-info:hover,
 .btn-punch.btn-white.hover-colors.hover-info:focus {
@@ -549,26 +549,26 @@ blockquote footer {
   color: #ffffff;
 }
 .btn-punch.btn-secondary {
-  border-color: #001f58;
-  color: #001f58;
+  border-color: #001F58;
+  color: #001F58;
   background-color: transparent;
 }
 .btn-punch.btn-secondary:hover,
 .btn-punch.btn-secondary:focus {
-  background-color: #001f58;
+  background-color: #001F58;
   color: #ffffff;
 }
 .btn-punch.btn-secondary.btn-inverse {
-  background-color: #001f58;
+  background-color: #001F58;
   color: #ffffff;
 }
 .btn-punch.btn-secondary.btn-inverse:hover,
 .btn-punch.btn-secondary.btn-inverse:focus {
   background-color: transparent;
-  color: #001f58;
+  color: #001F58;
 }
 .btn-punch.btn-secondary.btn-darker {
-  background-color: #001f58;
+  background-color: #001F58;
   color: #ffffff;
 }
 .btn-punch.btn-secondary.btn-darker:hover,
@@ -896,7 +896,7 @@ label {
 .form-process {
   width: 100%;
   height: 100%;
-  background: url("images/preloader.gif") center center no-repeat #ffffff;
+  background: url("images/preloader.gif") center center no-repeat #FFF;
   display: none;
   position: absolute;
   z-index: 3;
@@ -1071,7 +1071,7 @@ label {
   background: #ffae00;
 }
 .heading-line.color-secondary {
-  background: #001f58;
+  background: #001F58;
 }
 .heading-line.color-info {
   background: #2196f3;
@@ -1406,7 +1406,7 @@ ul.link-list {
   background-color: #2196f3;
 }
 .progress-container .progress .progress-bar.progress-bar-secondary {
-  background-color: #001f58;
+  background-color: #001F58;
 }
 .progress-container .progress .progress-bar.progress-bar-white {
   background-color: #ffffff;
@@ -2284,7 +2284,7 @@ ul.portfolio-list li span:first-child {
   padding-top: 95px;
   padding-bottom: 95px;
   position: relative;
-  background-color: #ffffff;
+  background-color: #FFF;
   overflow: hidden;
 }
 .section.small-padding,
@@ -3136,7 +3136,7 @@ ul.portfolio-list li span:first-child {
 .paper.full .secondary-background,
 .section .circle.secondary-background,
 .paper .circle.secondary-background {
-  background-color: #001f58;
+  background-color: #001F58;
   color: #ffffff;
 }
 .section.secondary-background h1,
@@ -4317,7 +4317,7 @@ ul.portfolio-list li span:first-child {
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #ffffff;
+  background-color: #FFF;
 }
 .container-fluid {
   padding-left: 5%;
@@ -5473,8 +5473,11 @@ p {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+#footer .widget address {
+  margin-bottom: 0;
+}
 .dropdown-menu {
-  background-color: #001f58 !important;
+  background-color: #001F58 !important;
 }
 @media (max-width: 767px) {
   font-color: green !important;
