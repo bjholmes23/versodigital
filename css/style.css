@@ -5488,3 +5488,6 @@ p {
 .retina-logo {
   height: 50px;
 }
+section.services h5 {
+  padding-top: 20px;
+}
