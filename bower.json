@@ -16,7 +16,8 @@
     "jquery.stellar": "~0.6.2",
     "flexslider": "~2.5.0",
     "jquery.localScroll": "~1.4.0",
-    "waypoints": "~2.0.3"
+    "waypoints": "~2.0.3",
+    "components-font-awesome": "~4.5.0"
   },
   "overrides": {
     "isotope": {
