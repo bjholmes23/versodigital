@@ -5449,7 +5449,7 @@ p {
   padding-right: 15px;
 }
 .who_we_are {
-  height: 300px;
+  max-height: 300px;
   display: block;
   margin-left: auto;
   margin-right: auto;
