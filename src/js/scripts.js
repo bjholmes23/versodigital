@@ -14,7 +14,7 @@
         sticky_header($(this));
         bs_tooltip($(this));
         youtube_bg($(this));
-        scroll_down($(this));
+        //scroll_down($(this));
         mobile_touch($(this));
     });
 
