@@ -5424,6 +5424,10 @@ html[xmlns] .flexslider .slides {
     display: none;
   }
 }
+#header.sticky .menu ul li a.active,
+#header.sticky .menu-toggle {
+  color: #ffae00 !important;
+}
 p {
   font-size: 18px;
 }
@@ -5508,4 +5512,7 @@ img.team-member {
 }
 .section.team .team-title {
   line-height: 1em;
+}
+.ourservices-intro {
+  padding: 95px 20px;
 }
