@@ -5513,6 +5513,17 @@ img.team-member {
 .section.team .team-title {
   line-height: 1em;
 }
-.ourservices-intro {
+.section-intro {
   padding: 95px 20px;
+}
+.subtitle {
+  line-height: 1em;
+  font-size: 15px;
+}
+#ourwork .client {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+#ourwork .client img.logo {
+  max-height: 200px;
 }
