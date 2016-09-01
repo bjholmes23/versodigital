@@ -5527,3 +5527,8 @@ img.team-member {
 #ourwork .client img.logo {
   max-height: 200px;
 }
+#ourwork .container-wallofsport {
+  width: 100%;
+  background-color: #3B62A3;
+  color: #fff;
+}
