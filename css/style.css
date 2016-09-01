@@ -5412,10 +5412,6 @@ html[xmlns] .flexslider .slides {
   }
 }
 @media (max-width: 767px) {
-  .container {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
   .section.full .container {
     margin: 0;
   }
