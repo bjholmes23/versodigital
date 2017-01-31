@@ -5420,8 +5420,12 @@ html[xmlns] .flexslider .slides {
     display: none;
   }
 }
-#header.sticky .menu ul li a.active,
-#header.sticky .menu-toggle {
+#header .logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#header .sticky .menu ul li a.active,
+#header .sticky .menu-toggle {
   color: #ffae00 !important;
 }
 p {
